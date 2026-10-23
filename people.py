@@ -78,6 +78,7 @@ class Person:
     def __lt__(self, other):
         return self.fio < other.fio
 
+# Наследники Person: Student и Teacher
 class Student(Person):
     def __init__(self, fio, mail, phone, group):
         super().__init__(fio, mail, phone)
